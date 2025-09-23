@@ -5,10 +5,10 @@ from math import sqrt
 def find_index(char):
     if "A" <= char <= "Z":
         return ord(char) - ord("A")
-    elif "0" <= char <= "9":
-        return ord(char) - ord("0") + 26
+    elif "a" <= char <= "z":
+        return ord(char) - ord("a") + 26
     else:
-        raise ValueError("Usage: [A-Z][0-9]")
+        raise ValueError("Usage: [A-Za-z]")
 
 
 def generate_graph(pheromone):
@@ -16,7 +16,7 @@ def generate_graph(pheromone):
     cities = list()
     with open("cities.txt", "r") as file:
         for line in file:
-            city, x, y = line.split("\t")
+            city, x, y = line.split()
             cities.append((find_index(city), int(x), int(y)))
 
     # write cities
