@@ -87,7 +87,7 @@ public class AntColonyOptimizationMapper extends Mapper<Object, Text, Text, Text
     private String stringifyPath(List<Integer> path) {
         StringBuilder result = new StringBuilder();
         for (int vertex : path) {
-            char content = vertex < 26 ? (char) ('A' + vertex) : (char) ('0' + (vertex - 26));
+            char content = vertex < 26 ? (char) ('A' + vertex) : (char) ('a' + (vertex - 26));
             result.append(content);
         }
         return result.toString();
