@@ -25,7 +25,7 @@ def generate_graph(pheromone):
             for target, x2, y2 in cities:
                 if source == target:
                     continue
-                weight = sqrt((x1 - x2)**2 + (y1 - y2)**2)
+                weight = int(0.5 + sqrt((x1 - x2)**2 + (y1 - y2)**2))
                 line = f"{source},{target},{weight},{pheromone}\n"
                 file.write(line)
 
