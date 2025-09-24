@@ -97,7 +97,7 @@ public class Graph {
                     Integer target = path.get(i);
                     return weights[source][target];
                 })
-                .sum();
+                .sum() + weights[path.get(path.size() - 1)][path.get(0)];
     }
 
     public List<String> getEdges() {
