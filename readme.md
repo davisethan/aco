@@ -1,6 +1,6 @@
 # Ant Colony Optimization
 
-## Goal-Questions-Metrics-Methods
+## Goal Question Metric Method (GQMM)
 
 ### Goal
 
@@ -40,7 +40,7 @@ We repeat running ACO, but with few configurations and for a large number of ste
 
 ![Example Probability](results/metrics/param_set_11_metrics.png)
 
-### Bootstrap
+### Repetition
 
 We use bootstrap resampling of our raw data from configuration exploitation. This lets us find variance in our results. Now, we can calculate the probability of finding the global shortest path across multiple runs of our exploitation.
 
