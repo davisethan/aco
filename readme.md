@@ -1,6 +1,6 @@
 # Ant Colony Optimization
 
-## Goal Questions Metrics Methods (GQMM)
+## Goal Question Metric Method (GQMM)
 
 ### Goal
 
