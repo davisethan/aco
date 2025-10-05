@@ -1,5 +1,7 @@
 # Ant Colony Optimization
 
+[![DOI](https://zenodo.org/badge/1062253448.svg)](https://doi.org/10.5281/zenodo.17220683)
+
 ## Goal Question Metric Method (GQMM)
 
 ### Goal
